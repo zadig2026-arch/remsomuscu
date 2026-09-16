@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0d10">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="RemsoMuscu">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <link rel="icon" href="./icon-192.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>RemsoMuscu</title>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <img src="./icon-192.png" alt="" class="topbar-logo">
+    <h1>RemsoMuscu</h1>
+    <span id="current-phase" class="badge">Phase 1 · S1</span>
+  </div>
+  <button id="btn-settings" class="icon-btn" aria-label="Réglages">⚙</button>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab active" data-tab="seance" role="tab">Séance</button>
+  <button class="tab" data-tab="programme" role="tab">Programme</button>
+  <button class="tab" data-tab="suivi" role="tab">Suivi</button>
+</nav>
+
+<main>
+
+  <!-- SÉANCE -->
+  <section id="tab-seance" class="tab-panel active">
+    <div class="session-picker">
+      <label for="session-select">Séance du jour · rotation auto A → B → C</label>
+      <select id="session-select"></select>
+    </div>
+    <div id="session-intro" class="session-intro"></div>
+    <div id="banners"></div>
+
+    <div class="card warmup-card" id="warmup-card">
+      <button type="button" class="card-toggle" id="warmup-toggle">
+        <span><strong>Échauffement</strong> <span class="muted" id="warmup-duration"></span></span>
+        <span class="history-chevron">▾</span>
+      </button>
+      <div id="warmup-list" class="check-list"></div>
+    </div>
+
+    <div id="exercises" class="exercises"></div>
+
+    <div class="card stretch-card" id="stretch-card">
+      <button type="button" class="card-toggle" id="stretch-toggle">
+        <span><strong>Étirements de fin de séance</strong> <span class="muted" id="stretch-duration"></span></span>
+        <span class="history-chevron">▾</span>
+      </button>
+      <p class="muted" id="stretch-consigne"></p>
+      <div id="stretch-list" class="check-list"></div>
+    </div>
+
+    <div class="done-zone">
+      <button id="btn-finish-session" class="primary big">Terminer la séance</button>
+    </div>
+  </section>
+
+  <!-- PROGRAMME -->
+  <section id="tab-programme" class="tab-panel">
+    <div class="card">
+      <h2 id="prog-titre"></h2>
+      <p class="muted" id="prog-profil"></p>
+      <p class="muted" id="prog-materiel"></p>
+    </div>
+
+    <div class="card">
+      <h2>Les 3 phases</h2>
+      <div id="prog-phases"></div>
+    </div>
+
+    <div class="card">
+      <h2>Les 3 séances</h2>
+      <div id="prog-seances"></div>
+    </div>
+
+    <div class="card">
+      <h2>Tes échelles de progression</h2>
+      <p class="muted">Chaque mouvement a plusieurs niveaux. Quand tu atteins le haut de la fourchette sur toutes les séries deux fois de suite, l'app te propose le niveau suivant.</p>
+      <div id="prog-echelles"></div>
+    </div>
+
+    <div class="card">
+      <h2>Les principes</h2>
+      <ul class="bullets" id="prog-principes"></ul>
+    </div>
+
+    <div class="card">
+      <h2 id="souplesse-titre"></h2>
+      <p class="muted" id="souplesse-consigne"></p>
+      <div id="souplesse-list" class="check-list"></div>
+    </div>
+
+    <div class="card">
+      <h2 id="nutrition-titre"></h2>
+      <p class="muted" id="nutrition-intro"></p>
+      <ul class="bullets" id="nutrition-regles"></ul>
+      <p class="muted" id="nutrition-pesee"></p>
+    </div>
+  </section>
+
+  <!-- SUIVI -->
+  <section id="tab-suivi" class="tab-panel">
+    <div class="card">
+      <h2>Pesée hebdomadaire</h2>
+      <p class="muted">Même jour chaque semaine, à jeun. Objectif : -0,3 à -0,5 kg par semaine.</p>
+      <div class="row">
+        <input id="input-weight" type="number" step="0.1" inputmode="decimal" placeholder="Poids en kg">
+        <button id="btn-save-weight" class="primary">Enregistrer</button>
+      </div>
+      <div id="weight-feedback" class="feedback"></div>
+      <canvas id="weight-chart" width="600" height="300"></canvas>
+      <div id="weight-list" class="weight-list"></div>
+    </div>
+
+    <div class="card">
+      <h2>Mensurations (1 fois par mois)</h2>
+      <p class="muted">Le mètre ruban ne ment pas : la taille qui descend et la poitrine qui monte, c'est le physique qui change.</p>
+      <div class="measures-grid">
+        <label>Taille (nombril)<input id="m-taille" type="number" step="0.5" inputmode="decimal" placeholder="cm"></label>
+        <label>Poitrine<input id="m-poitrine" type="number" step="0.5" inputmode="decimal" placeholder="cm"></label>
+        <label>Bras fléchi<input id="m-bras" type="number" step="0.5" inputmode="decimal" placeholder="cm"></label>
+        <label>Épaules<input id="m-epaules" type="number" step="0.5" inputmode="decimal" placeholder="cm"></label>
+      </div>
+      <button id="btn-save-measures" class="primary">Enregistrer les mesures</button>
+      <div id="measures-feedback" class="feedback"></div>
+      <div id="measures-list" class="measures-list"></div>
+    </div>
+
+    <div class="card">
+      <h2>Photos de progression</h2>
+      <p class="muted">Une photo par mois, même lumière, même pose, de face et de profil. Reste sur ton téléphone, rien n'est envoyé nulle part.</p>
+      <label class="photo-add">
+        <input id="input-photo" type="file" accept="image/*" hidden>
+        <span class="ghost photo-add-btn">📷 Ajouter une photo</span>
+      </label>
+      <div id="photo-grid" class="photo-grid"></div>
+    </div>
+
+    <div class="card">
+      <h2>Historique des séances</h2>
+      <div id="history-summary" class="prog-summary"></div>
+      <div id="history-list" class="history-list"></div>
+    </div>
+
+    <div class="card danger-card">
+      <h2>Zone dangereuse</h2>
+      <button id="btn-reset" class="danger">Effacer toutes les données</button>
+    </div>
+  </section>
+
+</main>
+
+<!-- Timer (repos ou maintien) -->
+<div id="rest-timer" class="rest-timer hidden">
+  <div>
+    <div class="rest-label" id="rest-label">Repos</div>
+    <div class="rest-time" id="rest-display">02:00</div>
+  </div>
+  <button id="rest-cancel" class="ghost">Annuler</button>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<!-- Réglages -->
+<div id="settings-modal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Réglages</h2>
+    <label>
+      Semaine du programme (calculée automatiquement, modifiable)
+      <input type="number" id="input-week" min="1" max="52" value="1">
+    </label>
+    <div class="row">
+      <button id="settings-save" class="primary">Enregistrer</button>
+      <button id="settings-close" class="ghost">Fermer</button>
+    </div>
+    <hr class="sep">
+    <button id="btn-retest" class="ghost full">Refaire le test de placement</button>
+    <button id="btn-export" class="ghost full">Exporter mes données (sauvegarde)</button>
+    <button id="btn-import" class="ghost full">Importer une sauvegarde</button>
+    <textarea id="import-area" class="hidden" rows="4" placeholder="Colle ici le texte exporté"></textarea>
+    <button id="btn-import-confirm" class="primary hidden">Importer</button>
+    <p class="muted" id="app-version" style="margin:14px 0 0; text-align:center"></p>
+  </div>
+</div>
+
+<!-- Test de placement -->
+<div id="onboarding-modal" class="modal hidden">
+  <div class="modal-content onboarding">
+    <img src="./icon-192.png" alt="" class="onboarding-logo">
+    <h2>Salut Rémy 👋</h2>
+    <p class="muted" id="test-intro"></p>
+    <div id="test-inputs"></div>
+    <div id="test-result" class="hidden"></div>
+    <div class="row">
+      <button id="test-compute" class="primary">Calculer mes niveaux</button>
+    </div>
+    <button id="test-start" class="primary big hidden">C'est parti 💪</button>
+  </div>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>

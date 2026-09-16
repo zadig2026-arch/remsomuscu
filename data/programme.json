@@ -1,0 +1,380 @@
+{
+  "meta": {
+    "titre": "RemsoMuscu · Haut du corps, pecs & abdos au poids de corps",
+    "version": "1.0.0",
+    "duree_semaines": 12,
+    "frequence": "3 séances/semaine (ex. Lun / Mer / Ven), environ 1 h chacune",
+    "profil": "Rémy : petit et trapu, trapèzes et bras déjà forts. Départ ~10 tractions, ~40 pompes, ~10 dips. Objectif : un beau physique. Perdre le ventre, développer les pecs, des abdos solides, un haut du corps large. Jambes en entretien. Pas de cardio.",
+    "materiel": "Une barre de traction. Deux chaises solides (dips, pompes en amplitude, fentes). Une table solide ou la barre en position basse pour le rowing. Un sac à dos avec des bouteilles d'eau pour lester (à partir de la phase 2). Optionnel : une paire d'élastiques."
+  },
+
+  "principes": [
+    "3 séances par semaine, jamais deux jours de suite. Chaque muscle du haut du corps est travaillé 2 à 3 fois par semaine : c'est ce qui fait grossir au poids de corps.",
+    "Tempo : 2 secondes de descente contrôlée, montée franche. 8 répétitions propres valent mieux que 15 bâclées.",
+    "Double progression : quand tu atteins le haut de la fourchette de reps sur TOUTES les séries, deux séances de suite, tu passes au niveau supérieur de l'exercice. L'app te le propose toute seule.",
+    "Dernière série proche de l'échec (il te reste 1 rep en réserve). En phase 3, la dernière série va jusqu'à l'échec.",
+    "Repos : 2 min sur les gros mouvements (tractions, dips, épaules), 90 s sur les pompes et le rowing, 45 à 60 s sur les abdos et les jambes.",
+    "Pas de travail direct des trapèzes ni des bras : ils sont déjà ton point fort. Tout part sur la largeur du dos, les épaules, les pecs et la taille.",
+    "Le ventre se perd en cuisine, pas avec des crunchs. Les abdos que tu construis ici deviennent visibles quand le gras descend (voir onglet Programme).",
+    "Une douleur d'articulation (épaule, coude, poignet) n'est pas une courbature : descends d'un niveau, ne force pas.",
+    "Une séance ratée n'est pas un problème. L'app reprend simplement là où tu t'es arrêté."
+  ],
+
+  "echauffement": {
+    "duree_min": 5,
+    "items": [
+      { "nom": "Rotations d'épaules", "detail": "15 vers l'avant, 15 vers l'arrière, bras tendus", "demo": "Shoulder_Circles" },
+      { "nom": "Rotations de poignets", "detail": "15 dans chaque sens, puis 10 flexions/extensions mains au sol" },
+      { "nom": "Chat / vache", "detail": "8 passages lents pour réveiller le dos", "demo": "Cat_Stretch" },
+      { "nom": "Tractions scapulaires", "detail": "8 reps : suspendu, tire uniquement les omoplates vers le bas sans plier les coudes", "demo": "Scapular_Pull-Up" },
+      { "nom": "Pompes inclinées lentes", "detail": "8 reps mains sur une chaise, 3 s de descente", "demo": "Incline_Push-Up" },
+      { "nom": "Cercles de hanches + squats", "detail": "10 cercles par sens, puis 10 squats avec descente contrôlée", "demo": "Bodyweight_Squat" }
+    ]
+  },
+
+  "etirements": {
+    "duree_min": 8,
+    "consigne": "En fin de séance, muscles chauds. Respire lentement, pas de rebond. Va jusqu'à une tension nette mais jamais jusqu'à la douleur.",
+    "items": [
+      { "nom": "Pecs dans l'encadrement de porte", "secs": 40, "cotes": 1, "detail": "Avant-bras contre le montant, coude à hauteur d'épaule, avance le buste", "demo": "Chest_And_Front_Of_Shoulder_Stretch" },
+      { "nom": "Suspension passive à la barre", "secs": 30, "cotes": 1, "detail": "Relâche complètement les épaules, ça ouvre les dorsaux et décompresse la colonne", "demo": "One_Handed_Hang" },
+      { "nom": "Épaule bras croisé", "secs": 30, "cotes": 2, "detail": "Bras tendu devant toi, ramène-le contre la poitrine avec l'autre bras", "demo": "Shoulder_Stretch" },
+      { "nom": "Triceps derrière la tête", "secs": 30, "cotes": 2, "detail": "Coude vers le plafond, main entre les omoplates, pousse doucement le coude", "demo": "Triceps_Stretch" },
+      { "nom": "Fléchisseurs de hanche (fente basse)", "secs": 40, "cotes": 2, "detail": "Genou arrière au sol, bassin poussé vers l'avant, buste droit. Essentiel pour rentrer le ventre et redresser la posture", "demo": "Kneeling_Hip_Flexor" },
+      { "nom": "Ischios assis", "secs": 40, "cotes": 1, "detail": "Jambes tendues, dos plat, penche-toi depuis les hanches", "demo": "Seated_Floor_Hamstring_Stretch" },
+      { "nom": "Quadriceps debout", "secs": 30, "cotes": 2, "detail": "Talon vers la fesse, genoux serrés, bassin rentré", "demo": "Quad_Stretch" },
+      { "nom": "Fessier / pyramidal (pigeon)", "secs": 40, "cotes": 2, "detail": "Cheville sur le genou opposé, penche le buste", "demo": "IT_Band_and_Glute_Stretch" },
+      { "nom": "Poignets à genoux", "secs": 30, "cotes": 1, "detail": "Doigts vers les genoux, paumes au sol, recule doucement le bassin", "demo": "Kneeling_Forearm_Stretch" }
+    ]
+  },
+
+  "souplesse_jour_off": {
+    "titre": "Routine souplesse (jour de repos, 15 min, optionnelle)",
+    "consigne": "Deux fois par semaine les jours sans séance, idéalement le soir. Chaque position 60 s, respiration lente.",
+    "items": [
+      { "nom": "Chat / vache", "secs": 60, "demo": "Cat_Stretch" },
+      { "nom": "Pecs dans l'encadrement de porte", "secs": 60, "demo": "Chest_And_Front_Of_Shoulder_Stretch" },
+      { "nom": "Suspension passive à la barre", "secs": 45, "demo": "One_Handed_Hang" },
+      { "nom": "Fente basse, chaque côté", "secs": 60, "demo": "Kneeling_Hip_Flexor" },
+      { "nom": "Pigeon, chaque côté", "secs": 60, "demo": "IT_Band_and_Glute_Stretch" },
+      { "nom": "Ischios assis", "secs": 60, "demo": "Seated_Floor_Hamstring_Stretch" },
+      { "nom": "Quadriceps allongé sur le côté, chaque côté", "secs": 45, "demo": "On_Your_Side_Quad_Stretch" },
+      { "nom": "Adducteurs (grenouille ou papillon)", "secs": 60, "demo": "Groin_and_Back_Stretch" },
+      { "nom": "Rotation thoracique allongé (bras qui s'ouvre)", "secs": 45, "demo": "Middle_Back_Stretch" },
+      { "nom": "Enfant (dos et épaules)", "secs": 60, "demo": "Upper_Back_Stretch" }
+    ]
+  },
+
+  "nutrition": {
+    "titre": "Perdre le ventre : les 6 règles",
+    "intro": "Ton ventre ne partira pas avec des abdos, il partira avec un léger déficit calorique tenu dans le temps. Le programme construit le muscle dessous, la cuisine le rend visible.",
+    "regles": [
+      "Déficit modéré : environ 300 à 500 kcal sous ta maintenance. Cible : perdre 0,3 à 0,5 kg par semaine, pas plus, sinon tu perds du muscle avec.",
+      "Protéines à chaque repas : vise 1,6 à 2 g par kilo de poids de corps et par jour (œufs, poulet, poisson, yaourt grec, fromage blanc, légumineuses). C'est ce qui protège le muscle pendant la perte.",
+      "Un seul changement gros impact : supprime les calories liquides (sodas, jus, alcool en semaine). C'est souvent 300 kcal par jour sans même s'en rendre compte.",
+      "Légumes à volonté à midi et le soir. Ça remplit, ça coûte rien en calories.",
+      "Marche : 8 000 à 10 000 pas par jour. Ce n'est pas du cardio, c'est la dépense invisible qui fait la différence sur 3 mois.",
+      "Sommeil 7 à 8 h. Dormir peu fait stocker sur le ventre (cortisol) et coupe la progression."
+    ],
+    "pesee": "Pèse-toi une fois par semaine, le même jour, à jeun. Regarde la tendance sur 3 semaines, jamais une pesée isolée."
+  },
+
+  "test_placement": {
+    "intro": "Fais ce test une fois, reposé, avec 3 min de repos entre chaque épreuve. Sois honnête sur l'amplitude : une traction = menton au-dessus de la barre, une pompe = poitrine à 5 cm du sol.",
+    "epreuves": [
+      { "id": "tractions", "nom": "Tractions strictes (max d'affilée)", "unite": "reps", "defaut": 10 },
+      { "id": "pompes", "nom": "Pompes strictes (max d'affilée)", "unite": "reps", "defaut": 40 },
+      { "id": "dips", "nom": "Dips entre deux chaises (max d'affilée)", "unite": "reps", "defaut": 10 },
+      { "id": "piquees", "nom": "Pompes piquées (max d'affilée)", "unite": "reps", "defaut": 8 },
+      { "id": "releves", "nom": "Relevés de genoux suspendus à la barre (max)", "unite": "reps", "defaut": 8 },
+      { "id": "planche", "nom": "Planche sur les coudes (max en secondes)", "unite": "s", "defaut": 60 }
+    ]
+  },
+
+  "echelles": {
+    "pecs": {
+      "nom": "Pompes (pecs)",
+      "muscle": "Pectoraux, épaules avant, triceps",
+      "placement": { "epreuve": "pompes", "seuils": [[35, 2], [20, 1], [0, 0]] },
+      "niveaux": [
+        { "nom": "Pompes standard", "min": 12, "max": 20, "demo": "Pushups", "consigne": "Corps gainé, mains sous les épaules, poitrine à 5 cm du sol." },
+        { "nom": "Pompes déclinées (pieds sur une chaise)", "min": 10, "max": 15, "demo": "Push-Ups_With_Feet_Elevated", "consigne": "Pieds surélevés : plus de charge sur le haut des pecs et les épaules." },
+        { "nom": "Pompes en amplitude (mains sur 2 chaises)", "min": 8, "max": 12, "demo": "Pushups", "consigne": "Mains sur deux chaises ou deux piles de livres, la poitrine descend PLUS BAS que les mains. C'est l'exercice qui étire et construit les pecs le plus. Descente 3 s." },
+        { "nom": "Pompes archer", "min": 6, "max": 10, "parCote": true, "demo": "Push-Up_Wide", "consigne": "Mains très écartées, tu descends vers une main pendant que l'autre bras se tend sur le côté. Compte les reps par côté." },
+        { "nom": "Pompes archer en amplitude", "min": 6, "max": 10, "parCote": true, "demo": "Push-Up_Wide", "consigne": "Comme les archer, mains sur deux chaises pour aller plus bas. Prépare la pompe à une main." },
+        { "nom": "Pompes à une main (assistées)", "min": 4, "max": 8, "parCote": true, "demo": "Single-Arm_Push-Up", "consigne": "Main libre posée sur un ballon ou une chaise basse pour t'aider. Pieds écartés." }
+      ]
+    },
+
+    "dips": {
+      "nom": "Dips (pecs bas + triceps)",
+      "muscle": "Pectoraux (bas), triceps, épaules avant",
+      "placement": { "epreuve": "dips", "seuils": [[15, 2], [6, 1], [0, 0]] },
+      "niveaux": [
+        { "nom": "Dips sur une chaise (mains derrière)", "min": 10, "max": 15, "demo": "Bench_Dips", "consigne": "Mains sur le bord d'une chaise, jambes tendues devant. Descends jusqu'à 90° au coude." },
+        { "nom": "Dips entre deux chaises, buste penché", "min": 8, "max": 12, "demo": "Dips_-_Chest_Version", "consigne": "Deux chaises solides dos à dos ou une barre de dips. Penche le buste vers l'avant : c'est ce qui recrute les pecs. Descends jusqu'à sentir l'étirement." },
+        { "nom": "Dips lestés (sac à dos 5 à 10 kg)", "min": 6, "max": 10, "demo": "Dips_-_Chest_Version", "consigne": "Sac à dos rempli de bouteilles d'eau. Même consigne : buste penché. Ajoute 2 kg quand tu atteins 10 reps sur toutes les séries." },
+        { "nom": "Dips lestés lourds (10 à 20 kg)", "min": 5, "max": 8, "demo": "Dips_-_Chest_Version", "consigne": "Descente 3 s, montée franche. Si les épaules tirent, réduis l'amplitude d'un poil." }
+      ]
+    },
+
+    "epaules": {
+      "nom": "Poussée verticale (épaules)",
+      "muscle": "Épaules, triceps, haut des pecs",
+      "placement": { "epreuve": "piquees", "seuils": [[15, 1], [0, 0]] },
+      "niveaux": [
+        { "nom": "Pompes piquées", "min": 8, "max": 12, "consigne": "Fesses hautes en V inversé, mains écartées largeur épaules. La tête descend entre les mains, vers le sol. Regarde tes pieds." },
+        { "nom": "Pompes piquées pieds surélevés", "min": 6, "max": 10, "consigne": "Pieds sur une chaise, bassin au-dessus des épaules. Le buste doit être presque vertical : c'est un demi-handstand push-up." },
+        { "nom": "Handstand push-up contre le mur : négatives", "min": 3, "max": 5, "demo": "Handstand_Push-Ups", "consigne": "Monte en équilibre contre le mur (dos au mur), descends en 5 secondes jusqu'à ce que la tête touche un coussin, reviens au sol, remonte." },
+        { "nom": "Handstand push-up contre le mur", "min": 4, "max": 8, "demo": "Handstand_Push-Ups", "consigne": "Amplitude complète, la tête touche un coussin à chaque rep. Gaine le ventre pour ne pas cambrer." },
+        { "nom": "Handstand push-up en déficit", "min": 4, "max": 8, "demo": "Handstand_Push-Ups", "consigne": "Mains sur deux piles de livres (10 cm), la tête descend sous le niveau des mains." }
+      ]
+    },
+
+    "tractions": {
+      "nom": "Tractions (largeur du dos)",
+      "muscle": "Grands dorsaux, biceps, avant-bras",
+      "placement": { "epreuve": "tractions", "seuils": [[12, 3], [8, 2], [3, 1], [0, 0]] },
+      "niveaux": [
+        { "nom": "Tractions négatives lentes", "min": 3, "max": 6, "demo": "Pullups", "consigne": "Saute ou grimpe menton au-dessus de la barre, descends en 5 secondes. Repose-toi 10 s entre les reps." },
+        { "nom": "Tractions pronation", "min": 5, "max": 8, "demo": "Pullups", "consigne": "Paumes vers l'avant, largeur épaules. Menton au-dessus, bras tendus en bas, sans balancer." },
+        { "nom": "Tractions prise large", "min": 6, "max": 10, "demo": "Pullups", "consigne": "Mains bien plus larges que les épaules. Tire les coudes vers les hanches, poitrine vers la barre. C'est l'exercice de la largeur." },
+        { "nom": "Tractions lestées (sac à dos 5 à 10 kg)", "min": 5, "max": 8, "demo": "Weighted_Pull_Ups", "consigne": "Prise large ou moyenne. Ajoute 2 kg quand tu fais 8 reps sur toutes les séries. Tu peux aussi pincer un sac entre les pieds." },
+        { "nom": "Tractions archer", "min": 4, "max": 6, "parCote": true, "demo": "Side_To_Side_Chins", "consigne": "Prise très large, tu tires vers une main pendant que l'autre bras se tend le long de la barre. Compte par côté." },
+        { "nom": "Tractions à une main : négatives", "min": 3, "max": 5, "parCote": true, "demo": "One_Arm_Chin-Up", "consigne": "Monte à deux mains, lâche une main, descends en 5 à 8 secondes." }
+      ]
+    },
+
+    "rowing": {
+      "nom": "Rowing inversé (épaisseur du dos, arrière d'épaule)",
+      "muscle": "Milieu du dos, deltoïdes arrière, biceps",
+      "placement": { "epreuve": "tractions", "seuils": [[8, 1], [0, 0]] },
+      "niveaux": [
+        { "nom": "Rowing inversé genoux fléchis", "min": 10, "max": 15, "demo": "Inverted_Row", "consigne": "Sous une table solide ou une barre basse. Pieds à plat, genoux pliés. Tire la poitrine jusqu'au bord, serre les omoplates 1 s." },
+        { "nom": "Rowing inversé jambes tendues", "min": 8, "max": 12, "demo": "Inverted_Row", "consigne": "Corps en planche, talons au sol. Coudes à 45° du corps, pas collés aux côtes, pour cibler l'arrière d'épaule." },
+        { "nom": "Rowing inversé pieds surélevés", "min": 8, "max": 12, "demo": "Bodyweight_Mid_Row", "consigne": "Pieds sur une chaise. Coudes hauts et écartés (angle 90°) : c'est la variante qui construit l'arrière d'épaule, celle qui donne les épaules rondes." },
+        { "nom": "Rowing inversé lesté ou à une main assistée", "min": 6, "max": 10, "demo": "Bodyweight_Mid_Row", "consigne": "Sac à dos sur la poitrine, ou une main qui tire, l'autre qui aide juste au sommet." }
+      ]
+    },
+
+    "chin": {
+      "nom": "Chin-ups (biceps, entretien)",
+      "muscle": "Biceps, dorsaux",
+      "placement": { "epreuve": "tractions", "seuils": [[12, 1], [0, 0]] },
+      "niveaux": [
+        { "nom": "Chin-ups (paumes vers toi)", "min": 6, "max": 10, "demo": "Chin-Up", "consigne": "Prise largeur épaules, paumes vers toi. Descente contrôlée 2 s. Juste 2 séries : tes bras n'ont pas besoin de plus." },
+        { "nom": "Chin-ups lestés", "min": 5, "max": 8, "demo": "Weighted_Pull_Ups", "consigne": "Sac à dos 5 à 10 kg. Toujours 2 séries maximum." }
+      ]
+    },
+
+    "triceps": {
+      "nom": "Pompes serrées (triceps)",
+      "muscle": "Triceps, pecs intérieurs",
+      "placement": { "epreuve": "pompes", "seuils": [[35, 1], [0, 0]] },
+      "niveaux": [
+        { "nom": "Pompes serrées (mains sous les épaules)", "min": 10, "max": 15, "demo": "Push-Ups_-_Close_Triceps_Position", "consigne": "Coudes collés aux côtes, mains sous les pecs. Descente 2 s." },
+        { "nom": "Pompes diamant pieds surélevés", "min": 8, "max": 12, "demo": "Push-Ups_-_Close_Triceps_Position", "consigne": "Index et pouces se touchent, pieds sur une chaise. Coudes qui restent serrés." },
+        { "nom": "Pompes pseudo-planche", "min": 6, "max": 10, "demo": "Push-Ups_-_Close_Triceps_Position", "consigne": "Mains au niveau des hanches, doigts tournés vers l'extérieur, penche-toi loin vers l'avant. Très dur pour les épaules avant et les triceps." }
+      ]
+    },
+
+    "jambes_quad": {
+      "nom": "Squat unilatéral (cuisses, fessiers)",
+      "muscle": "Quadriceps, fessiers",
+      "placement": { "epreuve": null, "defaut": 1 },
+      "niveaux": [
+        { "nom": "Squat tempo 3-1-1", "min": 12, "max": 20, "demo": "Bodyweight_Squat", "consigne": "3 s de descente, 1 s de pause en bas, remontée franche. Cuisses sous la parallèle." },
+        { "nom": "Fentes bulgares (pied arrière sur une chaise)", "min": 8, "max": 12, "parCote": true, "demo": "Split_Squats", "consigne": "Pied arrière posé sur une chaise, buste droit, le genou avant descend jusqu'à ce que la cuisse soit horizontale." },
+        { "nom": "Pistol squat assisté", "min": 5, "max": 8, "parCote": true, "demo": "Single-Leg_High_Box_Squat", "consigne": "Tiens-toi à un montant de porte ou une table pour t'aider à l'équilibre et à la remontée. Descends le plus bas possible." },
+        { "nom": "Pistol squat", "min": 4, "max": 8, "parCote": true, "demo": "Single-Leg_High_Box_Squat", "consigne": "Squat complet sur une jambe, l'autre tendue devant. Bras tendus devant pour l'équilibre." }
+      ]
+    },
+
+    "jambes_post": {
+      "nom": "Ischios / fessiers",
+      "muscle": "Ischio-jambiers, fessiers",
+      "placement": { "epreuve": null, "defaut": 1 },
+      "niveaux": [
+        { "nom": "Pont fessier", "min": 15, "max": 20, "demo": "Butt_Lift_Bridge", "consigne": "Allongé, pieds à plat près des fesses, monte le bassin en serrant les fessiers 1 s en haut." },
+        { "nom": "Pont fessier à une jambe", "min": 10, "max": 15, "parCote": true, "demo": "Single_Leg_Glute_Bridge", "consigne": "Une jambe tendue en l'air, l'autre pousse. Le bassin reste droit, pas de rotation." },
+        { "nom": "Nordic curl : négatives", "min": 3, "max": 6, "demo": "Natural_Glute_Ham_Raise", "consigne": "À genoux, pieds bloqués sous un canapé ou tenus. Descends vers l'avant le plus lentement possible en gardant les hanches ouvertes, rattrape-toi avec les mains, repousse pour remonter." },
+        { "nom": "Nordic curl", "min": 4, "max": 8, "demo": "Natural_Glute_Ham_Raise", "consigne": "Descente lente, puis remontée par la force des ischios avec une aide minimale des mains." }
+      ]
+    },
+
+    "abdos_releves": {
+      "nom": "Relevés de jambes (abdos bas)",
+      "muscle": "Grand droit (partie basse), fléchisseurs de hanche",
+      "placement": { "epreuve": "releves", "seuils": [[12, 2], [6, 1], [0, 0]] },
+      "niveaux": [
+        { "nom": "Crunch inversé au sol", "min": 12, "max": 20, "demo": "Reverse_Crunch", "consigne": "Allongé, mains sous les fesses, genoux pliés. Décolle le bassin du sol en enroulant, pas en balançant." },
+        { "nom": "Relevés de genoux suspendus", "min": 8, "max": 15, "demo": "Hanging_Leg_Raise", "consigne": "Suspendu à la barre. Monte les genoux au-dessus des hanches en ENROULANT le bassin (le bas du dos s'arrondit). Zéro balancement." },
+        { "nom": "Relevés de jambes tendues suspendus", "min": 6, "max": 12, "demo": "Hanging_Leg_Raise", "consigne": "Jambes tendues jusqu'à l'horizontale minimum. Descente 2 s." },
+        { "nom": "Toes to bar (pieds à la barre)", "min": 6, "max": 10, "demo": "Hanging_Pike", "consigne": "Jambes tendues, les pieds viennent toucher la barre. Bassin enroulé, pas de kipping." },
+        { "nom": "Essuie-glaces suspendus", "min": 5, "max": 8, "parCote": true, "demo": "Isometric_Wipers", "consigne": "Jambes tendues à l'horizontale, va d'un côté à l'autre comme un essuie-glace. Le must pour les obliques et la ceinture abdominale." }
+      ]
+    },
+
+    "abdos_gainage": {
+      "nom": "Gainage & anti-extension",
+      "muscle": "Grand droit, transverse (la sangle qui rentre le ventre)",
+      "placement": { "epreuve": "planche", "seuils": [[60, 1], [0, 0]] },
+      "niveaux": [
+        { "nom": "Planche sur les coudes", "hold": true, "min": 45, "max": 60, "demo": "Plank", "consigne": "Fesses serrées, bassin rentré (le bas du dos ne creuse pas), regard au sol. Une planche à 60 s propre, c'est le ticket pour le niveau suivant." },
+        { "nom": "Hollow body hold", "hold": true, "min": 30, "max": 45, "consigne": "Allongé sur le dos, bas du dos PLAQUÉ au sol, bras et jambes tendus à 20 cm du sol, en forme de banane. Si le dos décolle, plie les genoux." },
+        { "nom": "Hollow rocks", "min": 12, "max": 20, "consigne": "Même position que le hollow hold, et tu te balances d'avant en arrière sans casser la forme." },
+        { "nom": "Planche RKC / body saw (serviette)", "min": 8, "max": 12, "consigne": "Planche sur les coudes, pieds sur une serviette (sol lisse) ou chaussettes : pousse le corps vers l'arrière avec les coudes, puis reviens. Très intense pour le grand droit." },
+        { "nom": "Dragon flag : négatives", "min": 3, "max": 5, "consigne": "Allongé, mains accrochées derrière la tête à un meuble lourd. Monte le corps tendu en appui sur les omoplates, descends en 5 s corps parfaitement droit." },
+        { "nom": "Dragon flag", "min": 4, "max": 8, "consigne": "Le corps monte et descend tout tendu, sans plier les hanches. L'exercice d'abdos ultime au poids de corps." }
+      ]
+    },
+
+    "abdos_obliques": {
+      "nom": "Obliques & taille",
+      "muscle": "Obliques, carré des lombes",
+      "placement": { "epreuve": "planche", "seuils": [[60, 1], [0, 0]] },
+      "niveaux": [
+        { "nom": "Planche latérale", "hold": true, "min": 30, "max": 45, "parCote": true, "demo": "Side_Bridge", "consigne": "Coude sous l'épaule, corps aligné de la tête aux pieds, bassin haut." },
+        { "nom": "Planche latérale avec élévation de hanche", "min": 10, "max": 15, "parCote": true, "demo": "Side_Bridge", "consigne": "En planche latérale, descends la hanche vers le sol et remonte-la le plus haut possible." },
+        { "nom": "Russian twist lesté (bouteille ou sac)", "min": 12, "max": 20, "parCote": true, "demo": "Russian_Twist", "consigne": "Assis, pieds décollés, buste incliné. Tourne le buste d'un côté à l'autre avec une charge dans les mains. Compte par côté." },
+        { "nom": "Relevés de genoux suspendus en rotation", "min": 8, "max": 12, "parCote": true, "demo": "Hanging_Leg_Raise", "consigne": "Suspendu, genoux qui montent vers une épaule puis l'autre. Bassin enroulé, pas de balancement." }
+      ]
+    },
+
+    "lsit": {
+      "nom": "L-sit (abdos + compression)",
+      "muscle": "Abdos, fléchisseurs de hanche, triceps, épaules",
+      "placement": { "epreuve": "planche", "seuils": [[60, 1], [0, 0]] },
+      "niveaux": [
+        { "nom": "Tuck sit (genoux repliés)", "hold": true, "min": 15, "max": 25, "consigne": "Assis entre deux chaises (ou au sol sur les mains), pousse fort dans les bras, genoux repliés vers la poitrine, fesses décollées." },
+        { "nom": "L-sit une jambe", "hold": true, "min": 15, "max": 25, "parCote": true, "consigne": "Une jambe tendue à l'horizontale, l'autre repliée. Alterne à chaque série." },
+        { "nom": "L-sit", "hold": true, "min": 10, "max": 20, "consigne": "Les deux jambes tendues à l'horizontale, pointes de pieds tendues, épaules basses." },
+        { "nom": "L-sit long", "hold": true, "min": 25, "max": 40, "consigne": "Même position, on allonge le temps. Objectif : 40 s d'une traite." }
+      ]
+    }
+  },
+
+  "phases": [
+    {
+      "id": "phase1",
+      "numero": 1,
+      "nom": "Adaptation",
+      "semaines": "1-4",
+      "de": 1, "a": 4,
+      "description": "On installe la technique et le rythme. 3 séries par exercice principal. Les tendons ont besoin de ces 4 semaines, même si tu te sens capable de plus.",
+      "series_max": 3,
+      "amrap": false
+    },
+    {
+      "id": "phase2",
+      "numero": 2,
+      "nom": "Volume",
+      "semaines": "5-8",
+      "de": 5, "a": 8,
+      "description": "4 séries sur les gros mouvements. C'est ici que les pecs et le dos prennent. Introduction du lest (sac à dos) sur tractions et dips quand l'échelle le propose.",
+      "series_max": 4,
+      "amrap": false
+    },
+    {
+      "id": "phase3",
+      "numero": 3,
+      "nom": "Intensité",
+      "semaines": "9-12",
+      "de": 9, "a": 12,
+      "description": "Même volume, mais la dernière série de chaque exercice principal va jusqu'à l'échec. Variantes avancées (archer, HSPU, dragon flag). Après la semaine 12 : une semaine légère, puis on repart en phase 2 avec les niveaux atteints.",
+      "series_max": 4,
+      "amrap": true
+    }
+  ],
+
+  "seances": [
+    {
+      "id": "A",
+      "nom": "A · Pecs & poussée",
+      "focus": "Séance pecs. Dips penchés et pompes en amplitude en premier, quand tu es frais.",
+      "blocs": [
+        {
+          "nom": "Haut du corps",
+          "exos": [
+            { "echelle": "dips", "series": 4, "principal": true, "repos_s": 120 },
+            { "echelle": "pecs", "series": 4, "principal": true, "repos_s": 90 },
+            { "echelle": "epaules", "series": 3, "principal": true, "repos_s": 90 },
+            { "echelle": "tractions", "series": 3, "repos_s": 120, "note": "Entretien de la largeur. Reste 2 reps sous l'échec aujourd'hui." }
+          ]
+        },
+        {
+          "nom": "Jambes (8 min)",
+          "exos": [
+            { "echelle": "jambes_quad", "series": 3, "repos_s": 60 }
+          ]
+        },
+        {
+          "nom": "Abdos (8 min)",
+          "exos": [
+            { "echelle": "abdos_releves", "series": 3, "repos_s": 60 },
+            { "echelle": "abdos_gainage", "series": 3, "repos_s": 45 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "nom": "B · Dos & largeur",
+      "focus": "Séance dos. Tractions prise large en premier, rowing coudes hauts pour l'arrière d'épaule.",
+      "blocs": [
+        {
+          "nom": "Haut du corps",
+          "exos": [
+            { "echelle": "tractions", "series": 4, "principal": true, "repos_s": 120 },
+            { "echelle": "rowing", "series": 4, "principal": true, "repos_s": 90 },
+            { "echelle": "pecs", "series": 3, "principal": true, "repos_s": 90 },
+            { "echelle": "chin", "series": 2, "repos_s": 90, "note": "2 séries, pas plus : les bras sont déjà ton point fort." }
+          ]
+        },
+        {
+          "nom": "Jambes (8 min)",
+          "exos": [
+            { "echelle": "jambes_post", "series": 3, "repos_s": 60 }
+          ]
+        },
+        {
+          "nom": "Abdos (8 min)",
+          "exos": [
+            { "echelle": "abdos_releves", "series": 3, "repos_s": 60 },
+            { "echelle": "abdos_obliques", "series": 3, "repos_s": 45 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "nom": "C · Épaules & haut complet",
+      "focus": "Séance épaules. Poussée verticale en premier, puis on repasse sur tout le haut.",
+      "blocs": [
+        {
+          "nom": "Haut du corps",
+          "exos": [
+            { "echelle": "epaules", "series": 4, "principal": true, "repos_s": 120 },
+            { "echelle": "dips", "series": 3, "principal": true, "repos_s": 90 },
+            { "echelle": "tractions", "series": 3, "principal": true, "repos_s": 120 },
+            { "echelle": "triceps", "series": 3, "repos_s": 60 }
+          ]
+        },
+        {
+          "nom": "Jambes (8 min)",
+          "exos": [
+            { "echelle": "jambes_quad", "series": 2, "repos_s": 60 },
+            { "echelle": "jambes_post", "series": 2, "repos_s": 60 }
+          ]
+        },
+        {
+          "nom": "Abdos (8 min)",
+          "exos": [
+            { "echelle": "abdos_gainage", "series": 3, "repos_s": 45 },
+            { "echelle": "lsit", "series": 3, "repos_s": 60 }
+          ]
+        }
+      ]
+    }
+  ]
+}

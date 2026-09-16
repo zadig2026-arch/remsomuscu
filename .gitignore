@@ -1,0 +1,7 @@
+# Scratch d'agents / outillage local — ne jamais committer
+# (c'est un worktree d'agent committé ici qui avait cassé le repo)
+.claude/
+.gstack/
+
+# macOS
+.DS_Store
