@@ -1,11 +1,11 @@
 {
   "meta": {
     "titre": "RemsoMuscu · Haut du corps, pecs & abdos au poids de corps",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "duree_semaines": 12,
     "frequence": "3 séances/semaine (ex. Lun / Mer / Ven), environ 1 h chacune",
     "profil": "Rémy : petit et trapu, trapèzes et bras déjà forts. Départ ~10 tractions, ~40 pompes, ~10 dips. Objectif : un beau physique. Perdre le ventre, développer les pecs, des abdos solides, un haut du corps large. Jambes en entretien. Pas de cardio.",
-    "materiel": "Une barre de traction. Deux chaises solides (dips, pompes en amplitude, fentes). Une table solide ou la barre en position basse pour le rowing. Un sac à dos avec des bouteilles d'eau pour lester (à partir de la phase 2). Optionnel : une paire d'élastiques."
+    "materiel": "Une barre de traction. Deux chaises solides (dips, pompes en amplitude, montées sur chaise). Une table solide ou la barre en position basse pour le rowing. Un sac à dos avec des bouteilles d'eau pour lester (à partir de la phase 2). Optionnel : une paire d'élastiques."
   },
 
   "principes": [
@@ -184,7 +184,7 @@
       "placement": { "epreuve": null, "defaut": 1 },
       "niveaux": [
         { "nom": "Squat tempo 3-1-1", "min": 12, "max": 20, "demo": "Bodyweight_Squat", "consigne": "3 s de descente, 1 s de pause en bas, remontée franche. Cuisses sous la parallèle." },
-        { "nom": "Fentes bulgares (pied arrière sur une chaise)", "min": 8, "max": 12, "parCote": true, "demo": "Split_Squats", "consigne": "Pied arrière posé sur une chaise, buste droit, le genou avant descend jusqu'à ce que la cuisse soit horizontale." },
+        { "nom": "Montées sur chaise (step-up)", "min": 10, "max": 15, "parCote": true, "demo": "Dumbbell_Step_Ups", "consigne": "Un pied à plat sur une chaise solide calée contre un mur. Monte en poussant UNIQUEMENT sur la jambe du haut, sans élan de la jambe au sol, puis redescends en 3 s. Toutes les reps d'un côté, puis l'autre." },
         { "nom": "Pistol squat assisté", "min": 5, "max": 8, "parCote": true, "demo": "Single-Leg_High_Box_Squat", "consigne": "Tiens-toi à un montant de porte ou une table pour t'aider à l'équilibre et à la remontée. Descends le plus bas possible." },
         { "nom": "Pistol squat", "min": 4, "max": 8, "parCote": true, "demo": "Single-Leg_High_Box_Squat", "consigne": "Squat complet sur une jambe, l'autre tendue devant. Bras tendus devant pour l'équilibre." }
       ]
