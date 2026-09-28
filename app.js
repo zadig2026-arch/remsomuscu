@@ -42,11 +42,24 @@ function saveState() { localStorage.setItem(LS_KEY, JSON.stringify(state)); }
 function today() { return new Date().toISOString().slice(0, 10); }
 function fmtDate(iso) { const [y, m, d] = iso.split('-'); return `${d}/${m}/${y.slice(2)}`; }
 
+// Échelles ajoutées après l'onboarding (ex. abdos_vups en 1.1.0) :
+// niveau de départ calculé depuis le test déjà fait, au lieu du niveau 0.
+function migrateLevels() {
+  if (!state.onboarded) return;
+  const fromTest = computeLevelsFromTest(state.test || {});
+  let changed = false;
+  for (const id of Object.keys(P.echelles)) {
+    if (state.levels[id] === undefined) { state.levels[id] = fromTest[id]; changed = true; }
+  }
+  if (changed) saveState();
+}
+
 // ===== Init =====
 async function init() {
   try {
     const res = await fetch('./data/programme.json');
     P = await res.json();
+    migrateLevels();
   } catch {
     document.body.innerHTML = '<p style="padding:20px;color:#f66">Impossible de charger le programme. Ouvre l\'app via un serveur HTTP, pas en file://.</p>';
     return;

@@ -1,6 +1,6 @@
 // Service worker RemsoMuscu. Bumper CACHE à chaque déploiement pour forcer la
 // mise à jour sur iPhone (même logique que l'app Sport).
-const CACHE = 'remsomuscu-v2';
+const CACHE = 'remsomuscu-v3';
 const ASSETS = [
   './',
   './index.html',

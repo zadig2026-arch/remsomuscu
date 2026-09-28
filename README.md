@@ -2,7 +2,7 @@
 
 App web (PWA) sur mesure pour Rémy : programme poids de corps de 12 semaines,
 3 séances par semaine d'environ 1 h, haut du corps prioritaire (pecs, largeur du
-dos, épaules), beaucoup d'abdos, jambes en entretien, étirements à chaque
+dos, épaules), beaucoup d'abdos, pas de jambes (retirées à sa demande), étirements à chaque
 séance. Pas de cardio.
 
 Fonctionne hors ligne sur iPhone une fois ajoutée à l'écran d'accueil. Toutes
@@ -25,8 +25,8 @@ les données restent sur le téléphone (localStorage + IndexedDB pour les photo
   séries deux séances de suite, l'app propose le niveau suivant. Flèches ▼ ▲
   sur chaque exercice pour ajuster à la main.
 - **3 séances en rotation** : A Pecs & poussée, B Dos & largeur, C Épaules &
-  haut complet. Chaque séance = échauffement 5 min, haut du corps, bloc jambes
-  8 min, bloc abdos 8 min, étirements 8 min.
+  haut complet. Chaque séance = échauffement 5 min, haut du corps, bloc abdos
+  16 min (3 exercices), étirements 8 min.
 - **3 phases** calculées automatiquement à partir des séances terminées :
   Adaptation (S1-4, 3 séries), Volume (S5-8, 4 séries), Intensité (S9-12,
   dernière série à l'échec).
